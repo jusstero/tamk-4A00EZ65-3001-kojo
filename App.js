@@ -11,10 +11,10 @@ import {
 import Constants from "expo-constants";
 import uuid from "uuid";
 
-import InputText from "./Components/InputText";
-import ItemList from "./Components/ItemList";
-import EditTask from "./Components/EditTask";
-import CountdownTimer from "./Components/CountdownTimer";
+import InputText from "./components/InputText";
+import ItemList from "./components/ItemList";
+import EditTask from "./components/EditTask";
+import CountdownTimer from "./components/CountdownTimer";
 
 export default function App() {
   const [tasks, setTasks] = useState([]);

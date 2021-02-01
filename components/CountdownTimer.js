@@ -7,7 +7,7 @@ const CountdownTimer = (props) => {
   const decrementTime = (decrement) => setTimeLeft(timeLeft - decrement);
 
   useEffect(() => {
-    if (timeLeft === 0) {
+    if (timeLeft <= 0) {
       props.onTimerEnd();
     } else {
       setTimeout(() => decrementTime(1), 1000);
