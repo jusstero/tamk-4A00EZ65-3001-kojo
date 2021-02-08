@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TextInput, Button, View, StyleSheet } from "react-native";
 
 const InputText = (props) => {
@@ -14,6 +14,14 @@ const InputText = (props) => {
       // setUserText("");
     }
   };
+
+  useEffect(() => {
+    if (props.text !== undefined) {
+      setUserText(props.text);
+    } else {
+      setUserText("");
+    }
+  }, [props.text]);
 
   return (
     <View style={styles.root}>
